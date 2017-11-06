@@ -1,0 +1,15 @@
+create database csv;
+use csv;
+DROP TABLE IF EXISTS `people`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `people` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `people` VALUES (1,'Billy Koepp DDS','samantha65@example.com','2017-11-06 14:43:49','2017-11-06 14:43:49'),(2,'Cheyenne Boyle MD','raegan87@example.com','2017-11-06 14:43:50','2017-11-06 14:43:50'),(3,'Patsy Rolfson III','elody44@example.net','2017-11-06 14:43:50','2017-11-06 14:43:50'),(4,'Allie Little PhD','gwisozk@example.net','2017-11-06 14:43:50','2017-11-06 14:43:50'),(5,'Prof. Lue Reinger','zoconner@example.com','2017-11-06 14:43:50','2017-11-06 14:43:50'),(6,'Lavinia Sawayn','keeley20@example.net','2017-11-06 14:43:50','2017-11-06 14:43:50'),(7,'Harrison O\'Conner Jr.','tbode@example.org','2017-11-06 14:43:50','2017-11-06 14:43:50'),(8,'Alexandria Schinner','npollich@example.com','2017-11-06 14:43:50','2017-11-06 14:43:50'),(9,'Ms. Dulce Reichert','keven27@example.net','2017-11-06 14:43:50','2017-11-06 14:43:50'),(10,'Ena Lakin','elfrieda.ziemann@example.com','2017-11-06 14:43:50','2017-11-06 14:43:50');
